@@ -92,7 +92,7 @@ int printint(va_list valist, char* buffer, int i)
 	i = va_arg(valist,int);
 	res_int = convert(i, 10);
 	len = _strlen(res_int);
-	for (it = 0; it < len; it++)
+	for (it = 0; it < len; it++, j++)
 	{
 		moveinto_buffer(buffer, res_int[it], j);
 	}
